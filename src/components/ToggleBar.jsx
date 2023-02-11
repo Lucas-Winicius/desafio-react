@@ -4,8 +4,8 @@ import '../styles/toggleBar.css'
 function ToggleBar() {
     return (
         <div className="buttons">
-            <button className="desfazer"><FaUndo/></button>
-            <button className="refazer"><FaRedo/></button>
+            <button className="desfazer"><FaUndo className='desfazer'/></button>
+            <button className="refazer"><FaRedo className="refazer"/></button>
         </div>
     )
 }

@@ -1,0 +1,49 @@
+/* buttons - desfazer - refazer */
+
+.buttons {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+button {
+    display: flex;
+    margin: 15px 10px;
+    background-color: rgba(0, 1, 10, 0.16);
+    border: 1px solid rgba(98, 98, 98, 0.303);
+    padding: 13px;
+    border-radius: 30px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+button.desfazer:hover {
+    animation: rotation 1s infinite;
+}
+
+button.refazer:hover {
+    animation: rotationReverse 1s infinite;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-55deg);
+    }
+  }
+
+@keyframes rotationReverse {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(55deg);
+    }
+  }

@@ -1,11 +1,22 @@
 import ToggleBar from '../components/ToggleBar'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../styles/app.css'
 
 function App() {
-
   const [ dots, setDots ] = useState([])
   const [ removeds, setRemoved ] = useState([])
+
+  useEffect(() => {
+    const desfazer = document.querySelector('.desfazer')
+    const refazer = document.querySelector('.refazer')
+
+    if(dots.length <= 0) desfazer.setAttribute('disabled', true)
+    else desfazer.removeAttribute('disabled')
+
+    if(removeds <= 0 ) refazer.setAttribute('disabled', true) 
+    else refazer.removeAttribute('disabled')
+
+  }, [dots, removeds])
 
   onclick = e => {
     if(e.target.classList.contains('container')) {

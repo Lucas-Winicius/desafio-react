@@ -23,6 +23,6 @@ Access link to my project: https://desafio-react-eight.vercel.app/
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
 # Did you like it?
-Give us your opinion on my instagram and/or one star the repository.
+Give us your opinion on my instagram and/or a star in this repository.
 *****
 <a href="https://instagram.com/sr_pumpkin_"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>

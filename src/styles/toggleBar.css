@@ -32,6 +32,7 @@ button.refazer:hover {
 
 .desfazer:disabled, .refazer:disabled {
   color: rgba(255, 255, 255, 0.448);
+  cursor: default;
 }
 
 .desfazer:disabled:hover, .refazer:disabled:hover {

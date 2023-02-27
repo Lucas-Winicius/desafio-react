@@ -13,12 +13,15 @@ function App() {
     if(dots.length <= 0) desfazer.setAttribute('disabled', true)
     else desfazer.removeAttribute('disabled')
 
-    if(removeds <= 0 ) refazer.setAttribute('disabled', true) 
+    if(removeds.length <= 0 ) refazer.setAttribute('disabled', true) 
     else refazer.removeAttribute('disabled')
 
   }, [dots, removeds])
 
   onclick = e => {
+
+    if(dots.length <= 0 && removeds.length >= 1) setRemoved([])
+
     if(e.target.classList.contains('container')) {
       const dotsArray = [ ...dots ]
       dotsArray.push({ top: `${e.clientY}px`, left: `${e.clientX}px` })

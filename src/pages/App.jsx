@@ -42,12 +42,11 @@ function App() {
   }, [dots, removeds])
   
   onclick = e => {
-    if(e.target.classList.contains('container')) {
+    if(e.target.classList.contains('container') || e.target.classList.contains('buttons')) {
       const dotsArray = [ ...dots ]
       dotsArray.push({ top: `${e.clientY}px`, left: `${e.clientX}px` })
       setDots(dotsArray)
-
-      if(dots.length <= 0 && removeds.length >= 1) setRemoved([])
+      setRemoved([])
     }
 
     if(e.target.classList.contains('desfazer')) {
